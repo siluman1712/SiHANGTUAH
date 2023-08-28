@@ -1,8 +1,8 @@
 <header class="header">
     <div class="page-brand">
         <a class="link" href="/">
-            <span class="brand">SeNYUM
-                <span class="brand-tip">SAPA</span>
+            <span class="brand">Si
+                <span class="brand-tip">HANGTUAH</span>
             </span>
             <span class="brand-mini"></span>
         </a>
