@@ -1,0 +1,19 @@
+.log{
+	width : 30%;	
+	margin-top : 10%;
+	padding: 18px;
+}
+
+button{
+	width : 49%
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #dcdcdc; }
+
+
+ /* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
