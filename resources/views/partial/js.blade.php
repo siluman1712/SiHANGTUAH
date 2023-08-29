@@ -1,46 +1,48 @@
-    <!-- CORE PLUGINS-->
-    <script src="assets/vendors/jquery/dist/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/vendors/popper.js/dist/umd/popper.min.js" type="text/javascript"></script>
-    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="assets/vendors/metisMenu/dist/metisMenu.min.js" type="text/javascript"></script>
-    <script src="assets/vendors/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-    <!-- PAGE LEVEL PLUGINS-->
-    <script src="assets/vendors/chart.js/dist/Chart.min.js" type="text/javascript"></script>
-    <script src="assets/vendors/jvectormap/jquery-jvectormap-2.0.3.min.js" type="text/javascript"></script>
-    <script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
-    <script src="assets/vendors/jvectormap/jquery-jvectormap-us-aea-en.js" type="text/javascript"></script>
-    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.js" type="text/javascript"></script>
-    <script src="assets/vendors/select2/dist/js/select2.full.min.js" type="text/javascript"></script>
-    <script src="assets/vendors/jquery-knob/dist/jquery.knob.min.js" type="text/javascript"></script>
-    <script src="assets/vendors/moment/min/moment.min.js" type="text/javascript"></script>
-    <script src="assets/vendors/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
-    <script src="assets/vendors/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
-    <script src="assets/vendors/jquery-minicolors/jquery.minicolors.min.js" type="text/javascript"></script>
-    <script src="assets/vendors/DataTables/datatables.min.js" type="text/javascript"></script>
-    <!-- CORE SCRIPTS-->
-    <script src="assets/js/app.min.js" type="text/javascript"></script>
-    <!-- PAGE LEVEL SCRIPTS-->
-    <script src="assets/js/scripts/form-plugins.js" type="text/javascript"></script>
-    <script>
-        $(function() {
-            $(".datepicker").datepicker({
-                format: 'yyyy-mm-dd',
-                autoclose: true,
-                todayHighlight: true,
-            });
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script>
+    $.widget.bridge('uibutton', $.ui.button)
+</script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/raphael/raphael.min.js"></script>
+<script src="bower_components/morris.js/morris.min.js"></script>
+<script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<script src="bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+<script src="bower_components/moment/min/moment.min.js"></script>
+<script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-            $('.timepicker').timepicker({
-                format: 'HH:mm',
-                showMeridian: false,
-                showInputs: false,
-                use24hours: true,
-            })
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="bower_components/select2/dist/js/select2.full.min.js"></script>
+<script src="bower_components/PACE/pace.min.js"></script>
+
+<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<script src="plugins/iCheck/icheck.min.js"></script>
+<script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
+
+<script src="dist/js/adminlte.min.js"></script>
+<script src="dist/js/pages/dashboard.js"></script>
+
+<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script>
+    $(function() {
+        $(".datepicker").datepicker({
+            format: 'yyyy-mm-dd',
+            autoclose: true,
+            todayHighlight: true,
         });
-    </script>
-    <script type="text/javascript">
-        $(".s1").select2();
-        $(".s2").select2({
-            placeholder: "Pilih Data",
-            allowClear: true
-        });
-    </script>
+
+        $('.timepicker').timepicker({
+            format: 'HH:mm',
+            showMeridian: false,
+            showInputs: false,
+            use24hours: true,
+        })
+    });
+</script>

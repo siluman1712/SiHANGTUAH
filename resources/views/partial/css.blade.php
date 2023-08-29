@@ -1,13 +1,27 @@
-    <!-- GLOBAL MAINLY STYLES-->
-    <link href="{!! asset('assets/vendors/bootstrap/dist/css/bootstrap.min.css') !!}" rel="stylesheet" />
-    <link href="{!! asset('assets/vendors/font-awesome/css/font-awesome.min.css') !!}" rel="stylesheet" />
-    <link href="{!! asset('assets/vendors/themify-icons/css/themify-icons.css') !!}" rel="stylesheet" />
-    <!-- PLUGINS STYLES-->
-    <link href="{!! asset('assets/vendors/jvectormap/jquery-jvectormap-2.0.3.css') !!}" rel="stylesheet" />
-    <link href="{!! asset('assets/vendors/select2/dist/css/select2.min.css') !!}" rel="stylesheet" />
-    <link href="{!! asset('assets/vendors/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css') !!}" rel="stylesheet" />
-    <link href="{!! asset('assets/vendors/bootstrap-timepicker/css/bootstrap-timepicker.min.css') !!}" rel="stylesheet" />
-    <link href="{!! asset('assets/vendors/jquery-minicolors/jquery.minicolors.css') !!}" rel="stylesheet">
-    <link href="{!! asset('assets/vendors/DataTables/datatables.min.css') !!}" rel="stylesheet" />
-    <!-- THEME STYLES-->
-    <link href="{!! asset('assets/css/main.min.css" rel="stylesheet') !!}" />
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+<link rel="stylesheet" href="{!! asset('bower_components/bootstrap/dist/css/bootstrap.min.css') !!}">
+<link rel="stylesheet" href="{!! asset('bower_components/font-awesome/css/font-awesome.min.css') !!}">
+<link rel="stylesheet" href="{!! asset('bower_components/Ionicons/css/ionicons.min.css') !!}">
+<link rel="stylesheet" href="{!! asset('bower_components/morris.js/morris.css') !!}">
+<link rel="stylesheet" href="{!! asset('bower_components/jvectormap/jquery-jvectormap.css') !!}">
+<link rel="stylesheet" href="{!! asset('bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') !!}">
+<link rel="stylesheet" href="{!! asset('bower_components/bootstrap-daterangepicker/daterangepicker.css') !!}">
+<link rel="stylesheet" href="{!! asset('bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css') !!}">
+<link rel="stylesheet" href="{!! asset('plugins/timepicker/bootstrap-timepicker.min.css') !!}">
+<link rel="stylesheet" href="{!! asset('bower_components/select2/dist/css/select2.min.css') !!}">
+<link rel="stylesheet" href="{!! asset('bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') !!}">
+<link rel="stylesheet" href="{!! asset('plugins/timepicker/bootstrap-timepicker.min.css') !!}">
+<link rel="stylesheet" href="{!! asset('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') !!}">
+<link rel="stylesheet" href="{!! asset('plugins/iCheck/all.css') !!}">
+<link rel="stylesheet" href="{!! asset('dist/css/AdminLTE.min.css') !!}">
+<link rel="stylesheet" href="{!! asset('dist/css/skins/_all-skins.min.css') !!}">
+<link rel="stylesheet" href="{!! asset('plugins/pace/pace.min.css') !!}">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->

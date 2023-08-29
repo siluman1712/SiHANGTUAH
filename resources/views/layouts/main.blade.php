@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <title>Layanan Umum | Dashboard</title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <!-- GLOBAL MAINLY STYLES-->
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SISTEM INFORMASI | HANGTUAH</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
     @include('partial.css')
-    <!-- PAGE LEVEL STYLES-->
-</head>
-<!-- <body class="fixed-navbar">-->
 
-<body class="fixed-layout">
-    <div class="page-wrapper">
+
+<body class="hold-transition skin-blue sidebar-collapse layout-top-nav">
+    <div class="wrapper">
         @include('partial.headernav')
         @include('partial.sidebarkiri')
         <div class="content-wrapper">
             @yield('content')
-            @include('partial.footer')
+
         </div>
     </div>
-    <div class="sidenav-backdrop backdrop"></div>
-    <div class="preloader-backdrop">
-        <div class="page-preloader">di Tunggu Ya .. </div>
-    </div>
+    <?php //include 'includes/aside.php';
+    ?>
+    <div class="control-sidebar-bg"></div>
+    @include('partial.footer')
     @include('partial.js')
     @include('partial.jssub')
 </body>

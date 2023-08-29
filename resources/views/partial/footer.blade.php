@@ -1,4 +1,7 @@
-<footer class="page-footer">
-    <div class="font-13">2022 © <b>Layanan Umum</b> - All rights reserved.</div>
-    <div class="to-top"><i class="fa fa-angle-double-up"></i></div>
+<footer class="main-footer">
+    <div class="pull-right hidden-xs">
+        <b>Version</b> 1a
+    </div>
+    <strong>Copyright &copy; 2022 <a href="?module=home">Layanan Umum dan Aset</a>.</strong> All rights
+    reserved.
 </footer>
