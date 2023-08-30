@@ -16,7 +16,22 @@ class SatkerController extends Controller
     
     public function index() {
         $dbsatker = dbsatker::all();
-        return view('dbsatker.satker')->with('dbsatker',$dbsatker);
+        return view('dbsatker.satker', compact('dbsatker'));
+    }
+
+    public function sukses(){
+    Session::flash('sukses','Ini notifikasi SUKSES');
+    return redirect('satker');
+    }
+ 
+    public function peringatan(){
+        Session::flash('peringatan','Ini notifikasi PERINGATAN');
+        return redirect('satker');
+    }
+ 
+    public function gagal(){
+        Session::flash('gagal','Ini notifikasi GAGAL');
+        return redirect('satker');
     }
 
     public function tambahsatker() {
@@ -25,6 +40,7 @@ class SatkerController extends Controller
         $kpknl = kpknl::all();
         return view('dbsatker.tambahsatker',compact('pebin', 'wilayah','kpknl'));
     }
+
     public function getPbi(Request $request){
         $pbi = pbi::where("kd_pebin",$request->pebinKd)->pluck('kd_pbi','ur_pbi');
         return response()->json($pbi);
@@ -50,7 +66,22 @@ class SatkerController extends Controller
         $dbsatker->nmpb = $request->input('nmpb');
         $dbsatker->kpknl = $request->input('kpknl');
         $dbsatker->save();
-        return redirect()->route('satker');
+        return redirect()->route('satker')->with('sukses','Data Berhasil ditambahkan!');
+    }
+
+    public function tampilkandata($id){
+        $data = dbsatker::find($id);
+        $pebin = pebin::all();
+        $wilayah = wilayah::all();
+        $kpknl = kpknl::all();
+        //dd($data);
+        return view('dbsatker.updatesatker', compact('data','pebin', 'wilayah','kpknl'));
+    }
+
+    public function updatesatker(Request $request, $id){
+        $data = dbsatker::find($id);
+        $data->update($request->all());
+        return redirect()->route('satker')->with('sukses','Data Berhasil diupdate!');
     }
 
 }

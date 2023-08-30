@@ -11,14 +11,12 @@
     <meta name="author" content="">
     @include('partial.css')
 
-
-<body class="hold-transition skin-blue sidebar-collapse layout-top-nav">
+<body class="hold-transition skin-blue fixed sidebar-collapse layout-top-nav">
     <div class="wrapper">
         @include('partial.headernav')
         @include('partial.sidebarkiri')
         <div class="content-wrapper">
             @yield('content')
-
         </div>
     </div>
     <div class="control-sidebar-bg"></div>

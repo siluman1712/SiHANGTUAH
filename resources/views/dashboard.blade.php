@@ -51,7 +51,7 @@
                 <!-- small box -->
                 <div class='small-box bg-red'>
                     <div class='inner'>
-                        <h3>$out[brg_kel]</h3>
+                        <h3></h3>
 
                         <p>Transaksi Barang Keluar</p>
                     </div>

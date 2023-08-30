@@ -4,13 +4,35 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
 
+            <li class="header"><font color='#fff'>REFERENSI</font></li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-sun-o"></i> <span>ADMIN</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/satker"><i class="fa fa-check"></i>Satuan Kerja </a></li>
+                    <li><a href=""><i class="fa fa-check"></i>Kodefikasi BMN </a></li>
+                    <li><a href=""><i class="fa fa-check"></i>Konfigurasi Tanggal </a></li>
+                    <li><a href=""><i class="fa fa-check"></i>Konfigurasi Ruangan </a></li>
+                    <li><a href=""><i class="fa fa-check"></i>Data Base Pegawai </a></li>
+                    <li><a href=""><i class="fa fa-check"></i>Penandatanganan </a></li>
+                </ul>
+            </li>
+
+
+
+
             <li class="header">
                 <font color='#fff'>MENU UTAMA</font>
             </li>
             <li><a href="?module=pmtik">
                     <i class="fa fa-database"></i>
                     Database Aset / BMN &nbsp;&nbsp;&nbsp;
-                </a></li>
+                </a>
+            </li>
 
             <li><a href="?module=pendetailanbmn">
                     <i class="fa fa-database"></i>
@@ -44,12 +66,6 @@
             <li><a href="?module=pic">
                     <i class="fa fa-user"></i>
                     [PIC] BMN &nbsp;&nbsp;&nbsp;
-                </a>
-            </li>
-
-            <li><a href="?module=import_xceldb">
-                    <i class="fa fa-database"></i>
-                    Import Data Excel to DB &nbsp;&nbsp;&nbsp;
                 </a>
             </li>
 

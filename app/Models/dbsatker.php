@@ -8,10 +8,21 @@ use Illuminate\Database\Eloquent\Model;
 class dbsatker extends Model
 {
     use HasFactory;
-    
+    protected $table = 'dbsatkers';
     protected $fillable=[
-        'pebin', 'pbi', 'wilayah', 'ukpb',
-        'upkpb','kdukpb', 'nmukpb', 'nmpb', 'jk',
+        'id',
+        'pebin', 
+        'pbi', 
+        'wilayah', 
+        'ukpb',
+        'upkpb',
+        'kdukpb', 
+        'nmukpb', 
+        'nmpb', 
+        'jk',
         'kpknl'
     ];
+    protected $primaryKey = 'id';
+    public $incrementing = false;
+    protected $keyType = 'string';
 }

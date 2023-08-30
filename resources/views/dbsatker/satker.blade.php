@@ -1,5 +1,4 @@
 @extends('layouts.main')
-
 @section('content')
     <section class="content-header">
         <h1>
@@ -8,8 +7,28 @@
     </section>
 
     <section class="content">
-        <a href="/tambahsatker" class="btn btn-danger btn-ms btn-flat"><i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;Tambah
-            Satuan Kerja</a>
+        <a href="/dbsatker/tambahsatker" class="btn btn-danger btn-ms btn-flat"><i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;Tambah Satuan Kerja</a>
+        <br><br>
+                @if ($message = Session::get('sukses'))
+                <div class="alert alert-success alert-block">
+                    <button type="button" class="close" data-dismiss="alert">×</button> 
+                    <strong>{{ $message }}</strong>
+                </div>
+                @endif
+ 
+                @if ($message = Session::get('gagal'))
+                <div class="alert alert-danger alert-block">
+                    <button type="button" class="close" data-dismiss="alert">×</button> 
+                    <strong>{{ $message }}</strong>
+                </div>
+                @endif
+ 
+                @if ($message = Session::get('peringatan'))
+                <div class="alert alert-warning alert-block">
+                    <button type="button" class="close" data-dismiss="alert">×</button> 
+                    <strong>{{ $message }}</strong>
+                </div>
+                @endif        
         <div class="row">
             <div class="col-md-12">
                 <div class="box">
@@ -41,8 +60,8 @@
                                         <td>{{ $result->nmpb }}</td>
                                         <td>{{ $result->jk }}</td>
                                         <td align="center">
-                                            <button type="button" class="btn btn-primary btn-sm">
-                                                <i class="fa fa-edit"></i>&nbsp;&nbsp;Edit</button>
+                                        <a href="/dbsatker/tampilkandata/{{ $result->id }}" class="btn btn-primary btn-sm">
+                                                <i class="fa fa-edit"></i>&nbsp;&nbsp;Edit </a>
                                             <button type="button" class="btn btn-danger btn-sm">
                                                 <i class="fa fa-trash"></i>&nbsp;&nbsp;Delete</button>
                                         </td>
