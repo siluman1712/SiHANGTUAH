@@ -21,8 +21,6 @@
 
         </div>
     </div>
-    <?php //include 'includes/aside.php';
-    ?>
     <div class="control-sidebar-bg"></div>
     @include('partial.footer')
     @include('partial.js')

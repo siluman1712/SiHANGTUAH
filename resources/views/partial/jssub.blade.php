@@ -1,7 +1,12 @@
 <script>
     $(function() {
-        $('.select2').select2();
-    })
+        //Initialize Select2 Elements
+        $('.select2').select2({
+            minimumInputLength: 5
+        });
+
+        $('.s2').select2();
+    });
 </script>
 <script>
     $('#pebin').change(function() {
