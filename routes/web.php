@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SatkerController;
+use App\Http\Controllers\KonfigTglController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +30,12 @@ Route::get('insertsatker', [SatkerController::class, 'create'] )->name('insertsa
 Route::post('insertsatker', [SatkerController::class, 'store'] )->name('insertsatker');
 Route::get('/dbsatker/tampilkandata/{id}', [SatkerController::class, 'tampilkandata'] )->name('dbsatker.tampilkandata');
 Route::post('/dbsatker/updatesatker/{id}', [SatkerController::class, 'updatesatker'] )->name('dbsatker.updatesatker');
+Route::get('/dbsatker/deletedata/{id}', [SatkerController::class, 'deletedata'] )->name('dbsatker.deletedata');
+
+Route::get('tampil_konfigtgl', [KonfigTglController::class, 'index'])->name('tampil_konfigtgl');
+
+
+
 
 
 

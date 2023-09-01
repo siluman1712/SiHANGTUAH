@@ -14,8 +14,7 @@
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="/satker"><i class="fa fa-check"></i>Satuan Kerja </a></li>
-                    <li><a href=""><i class="fa fa-check"></i>Kodefikasi BMN </a></li>
-                    <li><a href=""><i class="fa fa-check"></i>Konfigurasi Tanggal </a></li>
+                    <li><a href="/tampil_konfigtgl"><i class="fa fa-check"></i>Konfigurasi Tanggal </a></li>
                     <li><a href=""><i class="fa fa-check"></i>Konfigurasi Ruangan </a></li>
                     <li><a href=""><i class="fa fa-check"></i>Data Base Pegawai </a></li>
                     <li><a href=""><i class="fa fa-check"></i>Penandatanganan </a></li>

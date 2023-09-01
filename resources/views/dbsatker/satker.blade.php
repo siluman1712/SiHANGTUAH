@@ -34,7 +34,7 @@
                 <div class="box">
                     <div class="box-body">
 
-                        <table id="table_1" class="table table-bordered table-striped responsive">
+                        <table id="table_4" class="table table-bordered table-striped responsive">
                             <thead>
                                 <tr>
                                     <th bgcolor="#dcdcdc">ID</th>
@@ -60,10 +60,9 @@
                                         <td>{{ $result->nmpb }}</td>
                                         <td>{{ $result->jk }}</td>
                                         <td align="center">
-                                        <a href="/dbsatker/tampilkandata/{{ $result->id }}" class="btn btn-primary btn-sm">
-                                                <i class="fa fa-edit"></i>&nbsp;&nbsp;Edit </a>
-                                            <button type="button" class="btn btn-danger btn-sm">
-                                                <i class="fa fa-trash"></i>&nbsp;&nbsp;Delete</button>
+                                        <a href="/dbsatker/tampilkandata/{{ $result->id }}" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit </a>
+                                        <a href="/dbsatker/deletedata/{{ $result->id }}" class="btn btn-danger btn-sm btn-flat">
+                                        <i class="fa fa-trash"></i>&nbsp;&nbsp;Delete</a>
                                         </td>
                                     </tr>
                                 </tbody>

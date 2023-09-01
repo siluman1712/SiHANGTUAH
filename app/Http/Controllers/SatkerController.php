@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 use App\Models\pebin;
 use App\Models\pbi;
@@ -78,10 +79,29 @@ class SatkerController extends Controller
         return view('dbsatker.updatesatker', compact('data','pebin', 'wilayah','kpknl'));
     }
 
-    public function updatesatker(Request $request, $id){
-        $data = dbsatker::find($id);
-        $data->update($request->all());
+    public function updatesatker(Request $request){
+        //$data = dbsatker::find($id);
+        //$data->update($request->all());
+        DB::table('dbsatkers')->where('id',$request->id)->update([
+            'pebin' => $request->pebin,
+            'pbi' => $request->pbi,
+            'wilayah' => $request->wilayah,
+            'ukpb' => $request->ukpb,
+            'upkpb' => $request->upkpb,
+            'jk' => $request->jk,
+            'kdukpb' => $request->pebin.$request->pbi.$request->wilayah.$request->ukpb.$request->upkpb.$request->jk,
+            'nmukpb' => $request->nmukpb,
+            'nmpb' => $request->nmpb,
+            'kpknl' => $request->kpknl
+            ]);
+
         return redirect()->route('satker')->with('sukses','Data Berhasil diupdate!');
+    }
+
+    public function deletedata($id){
+        $data = dbsatker::find($id);
+        $data->delete();
+        return redirect()->route('satker')->with('sukses','Data Berhasil dihapus!');
     }
 
 }
