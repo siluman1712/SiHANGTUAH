@@ -17,3 +17,4 @@
 <link rel="stylesheet" href="{!! asset('dist/css/AdminLTE.min.css') !!}">
 <link rel="stylesheet" href="{!! asset('dist/css/skins/_all-skins.min.css') !!}">
 <link rel="stylesheet" href="{!! asset('plugins/pace/pace.min.css') !!}">
+

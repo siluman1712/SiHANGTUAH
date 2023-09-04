@@ -15,5 +15,14 @@ class KonfigTglController extends Controller
         $konfig_tanggals = KonfigTanggal::all();
         return view('konfigtanggal.konfigurasi_tanggal', compact('konfig_tanggals'));
     }
+
+    public function edittanggal($id)
+    {
+        $edittanggal = KonfigTanggal::find($id);
+        //dd($edittanggal);
+        return view('konfigtanggal.edittanggal', compact('edittanggal'));
+    }
+
+
 }
 

@@ -31,27 +31,27 @@
             <div class="col-md-12">
                 <div class="box">
                     <div class="box-body">
-
-                        <table id="table_4" class="table table-bordered table-striped responsive">
-                            <thead>
-                                <tr>
-                                    <th bgcolor="#dcdcdc">ID</th>
-                                    <th bgcolor="#dcdcdc">TAHUN ANGGARAN</th>
-                                    <th bgcolor="#dcdcdc">TANGGAL AWAL</th>
-                                    <th bgcolor="#dcdcdc">TANGGAL AKHIR</th>
-
-                                </tr>
-                            </thead>
-                            @foreach ($konfig_tanggals as $result)
-                                <tbody>
-                                    <tr>
-                                        <td>{{ $result->id }}</td>
-                                        <td>{{ $result->tglAwal }}</td>
-                                        <td>{{ $result->tglAkhir }}</td>
-                                        <td>{{ $result->tahun_anggaran }}</td>
-                                    </tr>
-                                </tbody>
-                            @endforeach
+                        <table class="table table-bordered table-striped responsive">
+                          <thead>
+                            <tr>
+                                <th scope="col" bgcolor="#dcdcdc">ID</th>
+                                <th scope="col" bgcolor="#dcdcdc">TAHUN ANGGARAN</th>
+                                <th scope="col" bgcolor="#dcdcdc">TANGGAL AWAL</th>
+                                <th scope="col" bgcolor="#dcdcdc">TANGGAL AKHIR</th>
+                                <th scope="col" bgcolor="#dcdcdc">AKSI</th>
+                            </tr>
+                          </thead>
+                          @foreach ($konfig_tanggals as $result)
+                          <tbody>
+                            <tr>
+                                <td scope="row">{{ $result->id }}</td>
+                                <td scope="row">{{ $result->tglAwal }}</td>
+                                <td scope="row">{{ $result->tglAkhir }}</td>
+                                <td scope="row">{{ $result->tahun_anggaran }}</td>
+                                <td scope="row"><a href="konfigtanggal/edittanggal/{{ $result->id }}" class="btn btn-warning btn-sm btn-flat"><i class="fa fa-edit"></i>&nbsp;&nbsp;&nbsp; Setting Tanggal</a></td>
+                            </tr>
+                          </tbody>
+                           @endforeach
                         </table>
 
                     </div>
