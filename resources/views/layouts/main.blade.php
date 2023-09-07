@@ -7,8 +7,6 @@
 </head>
 
 <body class="fixed-header sticky-footer menuleft-open">
-    @include('partial.loader')
-
     <div class="wrapper">
 
         @include('partial.headernav')

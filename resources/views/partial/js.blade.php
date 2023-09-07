@@ -15,5 +15,11 @@
 	<script src="{!! asset('assets/vendor/jquery-jvectormap/jquery-jvectormap-in-mill.js') !!}"></script>
 	<script src="{!! asset('assets/vendor/footable-bootstrap.latest/js/footable.min.js') !!}"></script>
 	<script src="{!! asset('assets/vendor/EasyAutocomplete-1.3.5/jquery.easy-autocomplete.min.js') !!}"></script> 
+	<script src="{!! asset('assets/vendor/datatables/js/jquery.dataTables.min.js') !!}"></script> 
+    <script src="{!! asset('assets/vendor/datatables/js/dataTables.bootstrap4.js') !!}"></script> 
+    <script src="{!! asset('assets/vendor/datatables/js/dataTables.responsive.min.js') !!}"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
 	<script src="{!! asset('assets/js/main.js') !!}"></script>
     

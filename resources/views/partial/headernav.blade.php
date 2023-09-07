@@ -3,7 +3,7 @@
 			<!-- Fixed navbar -->
 			<nav class="navbar navbar-expand-sm ">
 				<a class="navbar-brand" href="#">
-					<img src="assets/img/logo.png" alt="">
+					<img src="{!! asset('assets/img/logo.png') !!}" alt="">
 					<h5 class="text-uppercase visible-md">
 						<span>Si<strong>HANGTUAH</strong></span>
 						<small>Hanggar <i class="fa fa-circle text-danger"></i> TATA USAHA</small>
@@ -40,7 +40,7 @@
 											<a class="item" href="#">
 												<div class="media">
 													<figure class="avatar36 rounded-circle z2 align-self-start mr-3">
-														<img src="assets/img/user2.png" alt="Generic placeholder image">
+														<img src="{!! asset('assets/img/user2.png') !!}" alt="Generic placeholder image">
 													</figure>
 													<div class="media-body">
 														<h5 class="time-title">John Smith
@@ -53,7 +53,7 @@
 											<a class="item" href="#">
 												<div class="media">
 													<figure class="avatar36 rounded-circle z2 align-self-start mr-3">
-														<img src="assets/img/user4.png" alt="Generic placeholder image">
+														<img src="{!! asset('assets/img/user4.png') !!}" alt="Generic placeholder image">
 													</figure>
 													<div class="media-body">
 														<h5 class="time-title">
@@ -148,7 +148,7 @@
 						<div class="dropdown float-left">
 							<a href="#" class="btn btn-link text-dark user-profile invisible-sm">
 								<figure class="avatar30 rounded-circle m-0">
-									<img src="assets/img/user1.png" alt="">
+									<img src="{!! asset('assets/img/user1.png') !!}" alt="">
 								</figure>								
 							</a>
 							<button class="btn btn-outline-default sq-btn rounded-0 dropdown-toggle float-right" data-toggle="dropdown" aria-haspopup="true"

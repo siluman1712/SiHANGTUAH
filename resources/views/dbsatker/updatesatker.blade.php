@@ -1,10 +1,20 @@
 @extends('layouts.main')
 @section('content')
-    <section class="content-header">
-        <h1>
-            Perubahan | Satuan Kerja
-        </h1>
-    </section>
+            <div class="container-fluid mb-3 position-relative bg-purple">
+                <div class="row">
+                    <div class="container py-2">
+                        <div class="row page-title-row">
+
+                            <div class="col-8 col-md-6">
+                                <h2 class="page-title text-white"> Satuan Kerja</h2>
+                                <p class="text-white">| Update Satuan Kerja</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
     <section class="content">
         <a href="/satker" class="btn btn-danger btn-sm"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;&nbsp; Kembali Ke

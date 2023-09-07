@@ -1,10 +1,56 @@
 @extends('layouts.main')
 @section('content')
-    <section class="content-header">
-        <h1>
-            Tambah Satuan Kerja
-        </h1>
-    </section>
+            <div class="container-fluid mb-3 position-relative bg-purple">
+                <div class="row">
+                    <div class="container py-2">
+                        <div class="row page-title-row">
+
+                            <div class="col-8 col-md-6">
+                                <h2 class="page-title text-white"> Satuan Kerja</h2>
+                                <p class="text-white">| Tambah Satuan Kerja</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="card rounded-0 border-0 mb-3">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-8">
+                            <h5 class="card-title">Tabel</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body ">
+
+                         <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                          <option value="AL">Alabama</option>
+                            ...
+                          <option value="WY">Wyoming</option>
+                        </select>
+
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-sm"> Footer Button</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
     <section class="content">
         <a href="/satker" class="btn btn-danger btn-sm"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;&nbsp; Kembali Ke

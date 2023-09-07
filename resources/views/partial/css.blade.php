@@ -7,3 +7,6 @@
 	<link href="{!! asset('assets/vendor/jquery-jvectormap/jquery-jvectormap-2.0.3.css') !!}" rel="stylesheet">
 	<link id="theme" rel="stylesheet" href="{!! asset('assets/css/style-dark-grey-sidebar.css') !!}" type="text/css">
 	<link rel="stylesheet" href="{!! asset('assets/vendor/EasyAutocomplete-1.3.5/easy-autocomplete.css') !!}" type="text/css">
+	<link href="{!! asset('assets/vendor/datatables/css/dataTables.bootstrap4.css') !!}" rel="stylesheet">
+    <link href="{!! asset('assets/vendor/datatables/css/responsive.dataTables.min.css') !!}" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />

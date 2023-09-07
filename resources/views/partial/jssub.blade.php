@@ -96,3 +96,107 @@
 
 
     </script>
+        <script>
+        "use strict";
+        $('#tables_1a').DataTable({
+            responsive: true,
+            pageLength:10,
+            sPaginationType: "full_numbers",
+            oLanguage: {
+                oPaginate: {
+                    sFirst: "<<",
+                    sPrevious: "<",
+                    sNext: ">", 
+                    sLast: ">>" 
+                }
+            }
+        });
+    </script>
+    <script>
+  
+  $('#table_3').DataTable({
+    "lengthMenu": [
+      [10, 25, 50, 100, -1],
+      [10, 25, 50, 100, "All"]
+    ],
+    paging: true,
+    searching: true,
+    ordering: true,
+    info: true,
+    "language": {
+      "search": "Cari:",
+      "lengthMenu": "Tampilkan _MENU_ baris",
+      "zeroRecords": "Maaf - Data tidak ada",
+      "infoEmpty": "Tidak ada data",
+      "infoFiltered": "(pencarian dari _MAX_ data)"
+    },
+    "responsive": true,
+    "stateSave": true // keep paging
+  });
+  
+
+  $('#table_1').DataTable({
+    "lengthMenu": [
+      [5, 10, 25, 50, 100, -1],
+      [5, 10, 25, 50, 100, "All"]
+    ],
+    paging: true,
+    searching: true,
+    ordering: true,
+    info: true,
+    "language": {
+      "search": "Cari:",
+      "lengthMenu": "Tampilkan _MENU_ baris",
+      "zeroRecords": "Maaf - Data tidak ada",
+      "infoEmpty": "Tidak ada data",
+      "infoFiltered": "(pencarian dari _MAX_ data)"
+    },
+    "responsive": true,
+    "stateSave": true // keep paging
+  });
+
+    $('#table_2').DataTable({
+    "lengthMenu": [
+      [3, 10, 25, 50, 100, -1],
+      [3, 10, 25, 50, 100, "All"]
+    ],
+    paging: true,
+    searching: false,
+    ordering: false,
+    info: false,
+    "language": {
+      "search": "Cari:",
+      "lengthMenu": "Tampilkan _MENU_ baris",
+      "zeroRecords": "Maaf - Data tidak ada",
+      "infoEmpty": "Tidak ada data",
+      "infoFiltered": "(pencarian dari _MAX_ data)"
+    },
+    "responsive": true,
+    "stateSave": true // keep paging
+  });
+
+    $('#table_4').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : false,
+      'autoWidth'   : false,
+      "language": {
+      "search": "Cari:",
+      "lengthMenu": "Tampilkan _MENU_ baris",
+      "zeroRecords": "Maaf - Data tidak ada",
+      "infoEmpty": "Tidak ada data",
+      "infoFiltered": "(pencarian dari _MAX_ data)"
+    },
+    "responsive": true,
+    "stateSave": true // keep paging
+    })
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('.select2').select2({
+        closeOnSelect: false
+    });
+    });
+  </script>

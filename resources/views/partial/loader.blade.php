@@ -1,5 +1,5 @@
 	<div class="loader-logo">
-		<img src="assets/img/logo.png" alt="bootstrap template design by maxartkiller">
+		<img src="{!! asset('assets/img/logo.png') !!}" alt="bootstrap template design by maxartkiller">
 		<br>
 		<div class="loader-ellipsis">
 			<div></div>
