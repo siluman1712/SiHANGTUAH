@@ -1,0 +1,256 @@
+#play_circle{ border-width: 2px !important;}
+.pl-list--current i.fa-play:before{content:"\f04c" }
+.bar,
+.bar:after,
+.bar:before {
+  width: 15px;
+  height: 3px;
+}
+
+.bar {
+  position: relative;
+  -webkit-transition: all 0ms 300ms;
+  transition: all 0ms 300ms;
+  -webkit-transform: translateY(6px);
+  transform: translateY(6px);
+  background: rgba(0, 178, 250, 1);
+}
+
+.bar.animate {
+  background: rgba(0, 178, 250, 0);
+}
+
+.bar:before {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  content: '';
+  -webkit-transition: bottom 300ms 300ms cubic-bezier(.23, 1, .32, 1), -webkit-transform 300ms cubic-bezier(.23, 1, .32, 1);
+  transition: bottom 300ms 300ms cubic-bezier(.23, 1, .32, 1), -webkit-transform 300ms cubic-bezier(.23, 1, .32, 1);
+  transition: bottom 300ms 300ms cubic-bezier(.23, 1, .32, 1), transform 300ms cubic-bezier(.23, 1, .32, 1);
+  transition: bottom 300ms 300ms cubic-bezier(.23, 1, .32, 1), transform 300ms cubic-bezier(.23, 1, .32, 1), -webkit-transform 300ms cubic-bezier(.23, 1, .32, 1);
+  background: rgba(0, 178, 250, 1);
+}
+
+.bar:after {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  content: '';
+  -webkit-transition: top 300ms 300ms cubic-bezier(.23, 1, .32, 1), -webkit-transform 300ms cubic-bezier(.23, 1, .32, 1);
+  transition: top 300ms 300ms cubic-bezier(.23, 1, .32, 1), -webkit-transform 300ms cubic-bezier(.23, 1, .32, 1);
+  transition: top 300ms 300ms cubic-bezier(.23, 1, .32, 1), transform 300ms cubic-bezier(.23, 1, .32, 1);
+  transition: top 300ms 300ms cubic-bezier(.23, 1, .32, 1), transform 300ms cubic-bezier(.23, 1, .32, 1), -webkit-transform 300ms cubic-bezier(.23, 1, .32, 1);
+  background: rgba(0, 178, 250, 1);
+}
+
+.bar.animate:after {
+  top: 0;
+  -webkit-transition: top 300ms cubic-bezier(.23, 1, .32, 1), -webkit-transform 300ms 300ms cubic-bezier(.23, 1, .32, 1);
+  transition: top 300ms cubic-bezier(.23, 1, .32, 1), -webkit-transform 300ms 300ms cubic-bezier(.23, 1, .32, 1);
+  transition: top 300ms cubic-bezier(.23, 1, .32, 1), transform 300ms 300ms cubic-bezier(.23, 1, .32, 1);
+  transition: top 300ms cubic-bezier(.23, 1, .32, 1), transform 300ms 300ms cubic-bezier(.23, 1, .32, 1), -webkit-transform 300ms 300ms cubic-bezier(.23, 1, .32, 1);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.bar.animate:before {
+  bottom: 0;
+  -webkit-transition: bottom 300ms cubic-bezier(.23, 1, .32, 1), -webkit-transform 300ms 300ms cubic-bezier(.23, 1, .32, 1);
+  transition: bottom 300ms cubic-bezier(.23, 1, .32, 1), -webkit-transform 300ms 300ms cubic-bezier(.23, 1, .32, 1);
+  transition: bottom 300ms cubic-bezier(.23, 1, .32, 1), transform 300ms 300ms cubic-bezier(.23, 1, .32, 1);
+  transition: bottom 300ms cubic-bezier(.23, 1, .32, 1), transform 300ms 300ms cubic-bezier(.23, 1, .32, 1), -webkit-transform 300ms 300ms cubic-bezier(.23, 1, .32, 1);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  ;
+}
+
+.jAudio--thumb {
+  width: 150px;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: background-image .2s ease-in-out;
+  transition: background-image .2s ease-in-out;
+}
+
+.no_album_img {
+  width: 150px;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  background: url(../../img/music_album.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 10px 20px -15px rgba(0, 0, 0, .35), 0 22px 40px -15px rgba(0, 0, 0, .20);
+}
+
+.timeline_wrap {
+  position: relative;
+  position: relative;
+  top: 0;
+  margin-top: 5px;
+  -webkit-transition: top .2s ease-in-out;
+  transition: top .2s ease-in-out;
+}
+
+.line_played {
+  position: absolute;
+  top: 0;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.line_preload {
+  position: absolute;
+  top: 0;
+  height: 4px;
+  background-color: rgb(118, 118, 118);
+}
+
+.line_preload.line_preload_up {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.progress-bar-wrapper {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+}
+
+.full_line {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.progress-bar-pointer {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  width: 0;
+  height: 0;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.progress-bar-wrapper:hover .progress-bar-pointer {
+  top: -3px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+}
+
+.progress-bar-pointer.progress-bar-pointer_up {
+  background: rgba(0, 178, 250, 1);
+}
+.full_line.full_line_up {
+  background-color: rgba(0, 178, 250, .4);
+}
+
+.time_of_song.time_of_song_up {
+  color: rgba(0, 178, 250, 1);
+}
+.touch-screen .menu_btn:hover,
+.touch-screen .random_btn:hover,
+.touch-screen .prev_btn:hover,
+.touch-screen .next_btn:hover,
+.touch-screen .repeat_btn:hover {
+  color: #fff;
+}
+
+.touch-screen .play_btn:hover {
+  background-color: #fff;
+}
+
+.player .pl-list__eq {
+	display: none;
+}
+
+.player .pl-list--current {
+	background: #1ec279;
+	color: #fff;
+}
+
+.player .pl-list--current .pl-list__eq {
+	display: block;
+}
+
+@-webkit-keyframes eq {
+	0% {
+		height: 3px;
+	}
+
+	50% {
+		height: 15px;
+	}
+
+	100% {
+		height: 3px;
+	}
+}
+
+@keyframes eq {
+	0% {
+		height: 3px;
+	}
+
+	50% {
+		height: 15px;
+	}
+
+	100% {
+		height: 3px;
+	}
+}
+
+.player .eq {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 20px;
+	height: 15px;
+	margin: 0 auto;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+}
+
+.player .eq__bar {
+	width: 4px;
+	background: #fff;
+	-webkit-filter: drop-shadow(0 0 5px #fff);
+	        filter: drop-shadow(0 0 5px #fff);
+}
+
+.player .eq__bar:nth-child(2) {
+	-webkit-animation: eq 1.2s ease-in-out infinite 0s;
+	        animation: eq 1.2s ease-in-out infinite 0s;
+}
+
+.player .eq__bar:nth-child(4) {
+	-webkit-animation: eq 1.2s ease-in-out infinite .2s;
+	        animation: eq 1.2s ease-in-out infinite .2s;
+}
+
+.player .eq__bar:nth-child(1) {
+	-webkit-animation: eq 1.2s ease-in-out infinite .4s;
+	        animation: eq 1.2s ease-in-out infinite .4s;
+}
+
+.player .eq__bar:nth-child(3) {
+	-webkit-animation: eq 1.2s ease-in-out infinite .6s;
+	        animation: eq 1.2s ease-in-out infinite .6s;
+}
