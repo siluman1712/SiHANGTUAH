@@ -1,3 +1,28 @@
+<script type="text/javascript">
+   $('#pebin').change(function(){
+    var pebinKd = $(this).val();    
+    if(pebinKd){
+        $.ajax({
+           type:"GET",
+           url:"/getPbi?pebinKd="+pebinKd,
+           dataType: 'JSON',
+           success:function(res){               
+            if(res){
+                $("#pbi").empty();
+                $("#pbi").append('<option> Unit Eselon I </option>');
+                $.each(res,function(ur_pbi,kd_pbi){
+                    $("#pbi").append('<option value="'+kd_pbi+'">'+kd_pbi+' - '+ur_pbi+'</option>');
+                });
+            }else{
+               $("#pbi").empty();
+            }
+           }
+        });
+    }else{
+        $("#pbi").empty();
+    }      
+   });
+</script>
 <script>
         "use strict";
         donutchart();
@@ -194,9 +219,38 @@
     })
   </script>
   <script type="text/javascript">
-    $(document).ready(function() {
-        $('.select2').select2({
-        closeOnSelect: false
+  $(function() {
+    //Initialize Select2 Elements
+    $('.select2').select2({
+    minimumInputLength: 5
     });
-    });
+
+    $('.s2').select2();
+    })
+  </script>
+  <script type="text/javascript">
+            $('#tanggal').datepicker({orientation: "bottom auto"});
+            $('#tanggals').datepicker({orientation: "bottom auto"});
+            $('#datepicker_month').datepicker({
+                startView: 1,
+                 autoclose: true,
+                orientation: "bottom auto"
+            });
+
+            $('#datepicker_month_disabled').datepicker({
+                startView: 1,
+                clearBtn: true,
+                orientation: "bottom auto",
+                daysOfWeekDisabled: "0,6",
+                 autoclose: true
+            });
+
+            $('#datepicker_month_disabled_weeks').datepicker({
+                startView: 1,
+                clearBtn: true,
+                orientation: "bottom auto",
+                daysOfWeekDisabled: "0,6",
+                calendarWeeks: true,
+                autoclose: true
+            });
   </script>

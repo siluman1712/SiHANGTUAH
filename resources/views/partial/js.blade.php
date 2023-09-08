@@ -18,8 +18,9 @@
 	<script src="{!! asset('assets/vendor/datatables/js/jquery.dataTables.min.js') !!}"></script> 
     <script src="{!! asset('assets/vendor/datatables/js/dataTables.bootstrap4.js') !!}"></script> 
     <script src="{!! asset('assets/vendor/datatables/js/dataTables.responsive.min.js') !!}"></script> 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+    <script src="{!! asset('assets/vendor/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.min.js') !!}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+
 	<script src="{!! asset('assets/js/main.js') !!}"></script>
     

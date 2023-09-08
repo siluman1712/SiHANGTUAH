@@ -33,7 +33,8 @@ Route::post('/dbsatker/updatesatker/{id}', [SatkerController::class, 'updatesatk
 Route::get('/dbsatker/deletedata/{id}', [SatkerController::class, 'deletedata'] )->name('dbsatker.deletedata');
 
 Route::get('tampil_konfigtgl', [KonfigTglController::class, 'index'])->name('tampil_konfigtgl');
-Route::get('konfigtanggal/edittanggal/{id}', [KonfigTglController::class, 'edittanggal'])->name('edittanggal');
+Route::get('konfigtanggal/tampildata/{id}', [KonfigTglController::class, 'tampildata'])->name('konfigtanggal.tampildata');
+Route::post('konfigtanggal/updatetgl/{id}', [KonfigTglController::class, 'updatetgl'] )->name('konfigtanggal.updatetgl');
 
 
 

@@ -104,4 +104,6 @@ class SatkerController extends Controller
         return redirect()->route('satker')->with('sukses','Data Berhasil dihapus!');
     }
 
+
+
 }

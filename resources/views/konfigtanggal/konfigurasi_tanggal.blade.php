@@ -1,12 +1,23 @@
 @extends('layouts.main')
 @section('content')
-    <section class="content-header">
-        <h1>
-            Konfigurasi Tanggal Aplikasi - Sistem
-        </h1>
-    </section>
 
-    <section class="content">
+<div class="container-fluid mb-3 position-relative bg-purple">
+    <div class="row">
+        <div class="container py-2">
+            <div class="row page-title-row">
+
+                <div class="col-8 col-md-6">
+                    <h2 class="page-title text-white"> Tanggal dan Tahun Anggaran</h2>
+                    <p class="text-white">| Konfigurasi Tanggal Transaksi dan Tahun Anggaran</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
         @if ($message = Session::get('sukses'))
             <div class="alert alert-success alert-block">
                 <button type="button" class="close" data-dismiss="alert">×</button>
@@ -27,36 +38,41 @@
                 <strong>{{ $message }}</strong>
             </div>
         @endif
-        <div class="row">
-            <div class="col-md-12">
-                <div class="box">
-                    <div class="box-body">
-                        <table class="table table-bordered table-striped responsive">
+
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="card rounded-0 border-0 mb-3">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-8">
+                        <h5 class="card-title">Tabel</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body ">
+                        <table id="table_4" class="table">
                           <thead>
                             <tr>
-                                <th scope="col" bgcolor="#dcdcdc">ID</th>
-                                <th scope="col" bgcolor="#dcdcdc">TAHUN ANGGARAN</th>
-                                <th scope="col" bgcolor="#dcdcdc">TANGGAL AWAL</th>
-                                <th scope="col" bgcolor="#dcdcdc">TANGGAL AKHIR</th>
-                                <th scope="col" bgcolor="#dcdcdc">AKSI</th>
+                                <th bgcolor="#dcdcdc">TAHUN ANGGARAN</th>
+                                <th bgcolor="#dcdcdc">TANGGAL AWAL</th>
+                                <th bgcolor="#dcdcdc">TANGGAL AKHIR</th>
+                                <th bgcolor="#dcdcdc" width="50">AKSI</th>
                             </tr>
                           </thead>
-                          @foreach ($konfig_tanggals as $result)
+                          @foreach ($data as $result)
                           <tbody>
                             <tr>
-                                <td scope="row">{{ $result->id }}</td>
-                                <td scope="row">{{ $result->tglAwal }}</td>
-                                <td scope="row">{{ $result->tglAkhir }}</td>
-                                <td scope="row">{{ $result->tahun_anggaran }}</td>
-                                <td scope="row"><a href="konfigtanggal/edittanggal/{{ $result->id }}" class="btn btn-warning btn-sm btn-flat"><i class="fa fa-edit"></i>&nbsp;&nbsp;&nbsp; Setting Tanggal</a></td>
+                                <td>{{ $result->tglAwal }}</td>
+                                <td>{{ $result->tglAkhir }}</td>
+                                <td>{{ $result->tahun_anggaran }}</td>
+                                <td>
+                                <a href="/konfigtanggal/tampildata/{{ $result->id }}" class="mb-2 btn btn-sm btn-danger rounded-0"><i class="fa fa-edit"></i>&nbsp;&nbsp; Perbaharui Tanggal</a>  
+                                </td>
                             </tr>
                           </tbody>
                            @endforeach
                         </table>
-
-                    </div>
                 </div>
             </div>
+            # T A : Tahun Anggaran
         </div>
-    </section>
 @endsection

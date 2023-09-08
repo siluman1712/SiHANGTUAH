@@ -28,10 +28,10 @@
 					</a>
 					<ul class="nav flex-column nav-second-level">
 						<li class="nav-item">
-							<a href="/satker" class="nav-link ">Satuan Kerja</a>
+							<a href="/satker" class="nav-link">Satuan Kerja</a>
 						</li>
 						<li class="nav-item">
-							<a class="/tampil_konfigtgl" href="media-object.html">Tanggal Sistem</a>
+							<a href="/tampil_konfigtgl" class="nav-link">Tanggal Sistem</a>
 						</li>
 					</ul>
 				</li>
