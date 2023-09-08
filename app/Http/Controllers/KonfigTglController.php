@@ -29,7 +29,7 @@ class KonfigTglController extends Controller
         DB::table('konfig_tanggals')->where('id',$request->id)->update([
             'tglAwal' => $request->tglAwal,
             'tglAkhir' => $request->tglAkhir,
-            'tahun_anggaran' => $request->tahun_anggaran,
+            'tahun_anggaran' => $request->tahun_anggaran
             ]);
 
         return redirect()->route('tampil_konfigtgl')->with('sukses','Data Berhasil diupdate!');

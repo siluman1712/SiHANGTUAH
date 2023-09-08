@@ -229,8 +229,14 @@
     })
   </script>
   <script type="text/javascript">
-            $('#tanggal').datepicker({orientation: "bottom auto"});
-            $('#tanggals').datepicker({orientation: "bottom auto"});
+            $('#tanggal').datepicker({
+                orientation: "bottom auto",
+                format: 'yyyy-mm-dd'
+            });
+            $('#tanggals').datepicker({
+                orientation: "bottom auto",
+                format: 'yyyy-mm-dd'
+            });
             $('#datepicker_month').datepicker({
                 startView: 1,
                  autoclose: true,
