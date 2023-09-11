@@ -42,8 +42,13 @@ Route::post('/konfigtanggal/updatetgl/{id}', [KonfigTglController::class, 'updat
 Route::get('/listgedung', [ListGedungController::class, 'index'] )->name('listgedung');
 Route::get('/kodefikasibmn', [KodefBMNController::class, 'index'] )->name('kodefikasibmn');
 
-Route::get('/kategoriruang', [KategoriRuangController::class, 'index'] )->name('kategoriruang');
 
+Route::get('/kategoriruang', [KategoriRuangController::class, 'index'] )->name('kategoriruang');
+Route::get('/dataruang/tambahkategori', [KategoriRuangController::class, 'tambahkategori'] )->name('dataruang.tambahkategori');
+Route::get('insertdata', [KategoriRuangController::class, 'create'] )->name('insertdata');
+Route::post('insertdata', [KategoriRuangController::class, 'store'] )->name('insertdata');
+Route::get('/dataruang/tampildata/{kodekategori}', [KategoriRuangController::class, 'tampildata'] )->name('dataruang.tampildata');
+Route::post('/dataruang/updatekategori/{kodekategori}', [KategoriRuangController::class, 'updatekategori'] )->name('dataruang.updatekategori');
 
 
 

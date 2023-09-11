@@ -39,7 +39,8 @@
                                 <td>{{ $rs->kodekategori }}</td>
                                 <td>{{ $rs->namakategori }}</td>
                                 <td>
-                                    <a href="" class="mb-2 btn btn-sm btn-warning rounded-0"> <i
+                                    <a href="/dataruang/tampildata/{{ $rs->kodekategori }}"
+                                        class="mb-2 btn btn-sm btn-warning rounded-0"> <i
                                             class="fa fa-edit"></i>&nbsp;&nbsp;&nbsp; Edit</a>
                                 </td>
                             </tr>
@@ -49,8 +50,8 @@
                 </table>
             </div>
             <div class="card-footer">
-                <a href="" class="mb-2 btn btn-sm btn-danger rounded-0"> <i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;
-                    Tambah Kategori</a>
+                <a href="/dataruang/tambahkategori" class="mb-2 btn btn-sm btn-danger rounded-0">
+                    <i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;Tambah Kategori</a>
             </div>
         </div>
     </div>
