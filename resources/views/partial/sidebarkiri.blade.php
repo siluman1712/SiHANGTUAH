@@ -40,10 +40,16 @@
 							<a href="/tampil_konfigtgl" class="nav-link">Tanggal Sistem</a>
 						</li>
 						<li class="nav-item">
+							<a href="/listgedung" class="nav-link">List Bangunan Gedung</a>
+						</li>
+						<li class="nav-item">
+							<a href="/kategoriruang" class="nav-link">Kategori Ruangan</a>
+						</li>
+						<li class="nav-item">
 							<a href="#" class="nav-link">Database Ruangan</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">Daftar Kodefikasi</a>
+							<a href="/kodefikasibmn" class="nav-link">Daftar Kodefikasi</a>
 						</li>
 					</ul>
 				</li>

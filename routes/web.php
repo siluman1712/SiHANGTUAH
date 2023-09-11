@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SatkerController;
 use App\Http\Controllers\KonfigTglController;
+use App\Http\Controllers\ListGedungController;
+use App\Http\Controllers\KategoriRuangController;
+use App\Http\Controllers\KodefBMNController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,8 +37,13 @@ Route::get('/dbsatker/deletedata/{id}', [SatkerController::class, 'deletedata'] 
 
 Route::get('tampil_konfigtgl', [KonfigTglController::class, 'index'])->name('tampil_konfigtgl');
 Route::get('/konfigtanggal/tampildata/{id}', [KonfigTglController::class, 'tampildata'])->name('tampildata');
-
 Route::post('/konfigtanggal/updatetgl/{id}', [KonfigTglController::class, 'updatetgl'] )->name('updatetgl');
+
+Route::get('/listgedung', [ListGedungController::class, 'index'] )->name('listgedung');
+Route::get('/kodefikasibmn', [KodefBMNController::class, 'index'] )->name('kodefikasibmn');
+
+Route::get('/kategoriruang', [KategoriRuangController::class, 'index'] )->name('kategoriruang');
+
 
 
 
