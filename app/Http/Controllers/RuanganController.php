@@ -23,4 +23,17 @@ class RuanganController extends Controller
                             ->get();
         return view('dataruangan.ruangan', compact('dtruangan'));
     }
+
+    public function tampilruangan($koderuangan){
+
+        $dtruangan = Ruangan::find($koderuangan);
+        //dd($data);
+        return view('dataruangan.updateruangan', compact('dtruangan'));
+    }
+
+    public function updateruangan(Request $request, $koderuangan)
+    {
+        Ruangan::find($koderuangan)->update($request->all());
+        return redirect()->route('ruangan')->with('success','Data Berhasil di Update');
+    }
 }

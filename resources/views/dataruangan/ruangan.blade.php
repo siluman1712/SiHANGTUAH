@@ -51,7 +51,7 @@
                                 <td>[{{ $rs->kategori }}] {{ $rs->namakategori }}</td>
                                 <td>{{ $rs->luasruangan }}</td>
                                 <td>
-                                    <a href="/dataruang/tampildata/{{ $rs->kodekategori }}"
+                                    <a href="/dataruangan/tampilruangan/{{ $rs->koderuangan }}"
                                         class="mb-2 btn btn-sm btn-warning rounded-0"> <i
                                             class="fa fa-edit"></i>&nbsp;&nbsp;&nbsp; Edit</a>
                                 </td>
@@ -62,7 +62,8 @@
                 </table>
             </div>
             <div class="card-footer">
-                <button class="btn btn-primary btn-sm"> Footer Button</button>
+                <a href="/dataruang/tambahruangan" class="mb-2 btn btn-sm btn-danger rounded-0">
+                    <i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;Tambah Ruangan / Unit</a>
             </div>
         </div>
     </div>

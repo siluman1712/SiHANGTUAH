@@ -40,7 +40,7 @@
                                 <td>{{ $rs->kodekategori }}</td>
                                 <td>{{ $rs->namakategori }}</td>
                                 <td>
-                                    <a href="/dataruang/tampildata/{{ $rs->kodekategori }}"
+                                    <a href="/dataruangan/tampildata/{{ $rs->kodekategori }}"
                                         class="mb-2 btn btn-sm btn-warning rounded-0"> <i
                                             class="fa fa-edit"></i>&nbsp;&nbsp;&nbsp; Edit</a>
                                 </td>

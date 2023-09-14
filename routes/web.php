@@ -45,14 +45,15 @@ Route::get('/kodefikasibmn', [KodefBMNController::class, 'index'] )->name('kodef
 
 
 Route::get('/kategoriruang', [KategoriRuangController::class, 'index'] )->name('kategoriruang');
-Route::get('/dataruang/tambahkategori', [KategoriRuangController::class, 'tambahkategori'] )->name('dataruang.tambahkategori');
+Route::get('/dataruangan/tambahkategori', [KategoriRuangController::class, 'tambahkategori'] )->name('dataruangan.tambahkategori');
 Route::get('insertdata', [KategoriRuangController::class, 'create'] )->name('insertdata');
 Route::post('insertdata', [KategoriRuangController::class, 'store'] )->name('insertdata');
-Route::get('/dataruang/tampildata/{kodekategori}', [KategoriRuangController::class, 'tampildata'] )->name('dataruang.tampildata');
-Route::post('/dataruang/updatekategori/{kodekategori}', [KategoriRuangController::class, 'updatekategori'] )->name('updatekategori');
+Route::get('/dataruangan/tampildata/{kodekategori}', [KategoriRuangController::class, 'tampildata'] )->name('dataruangan.tampildata');
+Route::post('/dataruangan/updatekategori/{kodekategori}', [KategoriRuangController::class, 'updatekategori'] )->name('updatekategori');
 
 Route::get('/ruangan', [RuanganController::class, 'index'] );
-
+Route::get('/dataruangan/tampilruangan/{koderuangan}', [RuanganController::class, 'tampilruangan'] )->name('dataruangan.tampilruangan');
+Route::post('/dataruangan/updateruangan/{koderuangan}', [RuanganController::class, 'updateruangan'] )->name('dataruangan.updateruangan');
 
 
 

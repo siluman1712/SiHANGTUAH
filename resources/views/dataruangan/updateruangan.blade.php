@@ -6,8 +6,8 @@
                 <div class="row page-title-row">
 
                     <div class="col-8 col-md-6">
-                        <h2 class="page-title text-white"> Kategori Ruangan</h2>
-                        <p class="text-white">| Update Kategori</p>
+                        <h2 class="page-title text-white"> Database Ruangan | Unit</h2>
+                        <p class="text-white">| Update Ruangan dan Unit</p>
                     </div>
 
                 </div>
@@ -25,23 +25,30 @@
                 </div>
             </div>
             <div class="card-body ">
-                <form method="post" action="/dataruangan/updatekategori/{{ $dtkategori->kodekategori }}"
+                <form method="post" action="/dataruangan/updateruangan/{{ $dtruangan->koderuangan }}"
                     enctype="multipart/form-data">
                     @csrf
                     <div class="form-group row">
-                        <label class="col-sm-2 control-label">Kode Kategori</label>
-                        <div class="col-sm-1">
-                            <input class="form-control form-control-ms" maxlength="3" type="text" placeholder="kdkat"
-                                name="kodekategori" value="{{ $dtkategori->kodekategori }}" readonly />
+                        <label class="col-sm-2 control-label">Satuan Kerja</label>
+                        <div class="col-sm-2">
+                            <input class="form-control form-control-ms" maxlength="9" type="text"
+                                placeholder="koderuang" name="koderuangan" value="{{ $dtruangan->kdukpb }}" readonly />
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-2 control-label">Nama Kategori</label>
+                        <label class="col-sm-2 control-label">Ruangan (kode - nama)</label>
+                        <div class="col-sm-2">
+                            <input class="form-control form-control-ms" maxlength="9" type="text"
+                                placeholder="koderuang" name="koderuangan" value="{{ $dtruangan->koderuangan }}" readonly />
+                        </div>
+
                         <div class="col-sm-5">
-                            <input class="form-control form-control-ms" type="text" placeholder="kdkat"
-                                name="namakategori" value="{{ $dtkategori->namakategori }}" />
+                            <input class="form-control form-control-ms" type="text" placeholder="nmruangan"
+                                name="namaruangan" value="{{ $dtruangan->namaruangan }}" />
                         </div>
                     </div>
+
+
             </div>
             <div class="card-footer">
                 <button class="mb-2 btn btn-sm btn-dark rounded-0" type="submit">
