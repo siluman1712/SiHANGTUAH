@@ -6,6 +6,7 @@ use App\Http\Controllers\KonfigTglController;
 use App\Http\Controllers\ListGedungController;
 use App\Http\Controllers\KategoriRuangController;
 use App\Http\Controllers\KodefBMNController;
+use App\Http\Controllers\RuanganController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,8 +49,9 @@ Route::get('/dataruang/tambahkategori', [KategoriRuangController::class, 'tambah
 Route::get('insertdata', [KategoriRuangController::class, 'create'] )->name('insertdata');
 Route::post('insertdata', [KategoriRuangController::class, 'store'] )->name('insertdata');
 Route::get('/dataruang/tampildata/{kodekategori}', [KategoriRuangController::class, 'tampildata'] )->name('dataruang.tampildata');
-Route::post('/dataruang/updatekategori/{kodekategori}', [KategoriRuangController::class, 'updatekategori'] )->name('dataruang.updatekategori');
+Route::post('/dataruang/updatekategori/{kodekategori}', [KategoriRuangController::class, 'updatekategori'] )->name('updatekategori');
 
+Route::get('/ruangan', [RuanganController::class, 'index'] );
 
 
 

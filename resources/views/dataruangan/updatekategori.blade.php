@@ -27,6 +27,7 @@
             <div class="card-body ">
                 <form method="post" action="/dataruang/updatekategori/{{ $dtkategori->kodekategori }}"
                     enctype="multipart/form-data">
+                    @csrf
                     <div class="form-group row">
                         <label class="col-sm-2 control-label">Kode Kategori</label>
                         <div class="col-sm-1">

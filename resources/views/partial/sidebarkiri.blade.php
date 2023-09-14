@@ -46,7 +46,7 @@
 							<a href="/kategoriruang" class="nav-link">Kategori Ruangan</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">Database Ruangan</a>
+							<a href="/ruangan" class="nav-link">Database Ruangan</a>
 						</li>
 						<li class="nav-item">
 							<a href="/kodefikasibmn" class="nav-link">Daftar Kodefikasi</a>

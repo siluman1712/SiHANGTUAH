@@ -127,22 +127,6 @@
     });
 </script>
 <script>
-    "use strict";
-    $('#tables_1a').DataTable({
-        responsive: true,
-        pageLength: 10,
-        sPaginationType: "full_numbers",
-        oLanguage: {
-            oPaginate: {
-                sFirst: "<<",
-                sPrevious: "<",
-                sNext: ">",
-                sLast: ">>"
-            }
-        }
-    });
-</script>
-<script>
     $('#table_3').DataTable({
         "lengthMenu": [
             [10, 25, 50, 100, -1],
