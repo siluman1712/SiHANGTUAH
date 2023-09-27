@@ -54,6 +54,9 @@ Route::post('/dataruangan/updatekategori/{kodekategori}', [KategoriRuangControll
 Route::get('/ruangan', [RuanganController::class, 'index'] );
 Route::get('/dataruangan/tampilruangan/{koderuangan}', [RuanganController::class, 'tampilruangan'] )->name('dataruangan.tampilruangan');
 Route::post('/dataruangan/updateruangan/{koderuangan}', [RuanganController::class, 'updateruangan'] )->name('dataruangan.updateruangan');
+Route::get('/dataruangan/tambahruang', [RuanganController::class, 'tambahruang'] )->name('dataruangan.tambahruang');
+Route::get('getLantai', [RuanganController::class, 'getLantai'] );
+Route::get('getNIP', [RuanganController::class, 'getNIP'] );
 
 
 

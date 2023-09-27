@@ -10,7 +10,8 @@ use App\Models\KategoriRuangan;
 use App\Models\dbgedung;
 use App\Models\dblantai;
 use App\Models\dbuniteselon;
-
+use App\Models\KonfigTanggal;
+use App\Models\dbsatker;
 
 class RuanganController extends Controller
 {
@@ -23,6 +24,39 @@ class RuanganController extends Controller
                             ->get();
         return view('dataruangan.ruangan', compact('dtruangan'));
     }
+
+    public function tambahruang()
+    {
+        $ta = KonfigTanggal::all(); 
+        $satker = dbsatker::all();
+        $eselon = dbuniteselon::all();
+        $kategori = KategoriRuangan::all();
+        $unit = Ruangan::all();
+        $nomor=Ruangan::count();
+        if($nomor == 000){
+            $urut = 001;
+            $next = $urut;
+            //dd($next);
+        }else{
+            $ambil = Ruangan::all()->last();
+            $urut = (int)substr($ambil->urutruangan,-3) + 1;
+            $next = $urut;
+        }
+        return view('dataruangan.tambahruang', compact('ta', 'satker', 'eselon', 'kategori', 'unit', 'next'));
+    }
+
+    public function getLantai(Request $request)
+    {
+        $lantai = dblantai::where("gedung",$request->gedungID)->pluck('ltgedung','uraianlantai');
+        return response()->json($lantai);
+    }
+
+    public function getNIP(Request $request)
+    {
+        $lantai = Pegawai::where("nip",$request->gedungID)->pluck('ltgedung','uraianlantai');
+        return response()->json($lantai);
+    }
+
 
     public function tampilruangan($koderuangan){
 

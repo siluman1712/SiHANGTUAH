@@ -1,30 +1,38 @@
- <script src="{!! asset('assets/vendor/jquery-3.2.1.min.js') !!}"></script>
- <script src="{!! asset('assets/vendor/popper.min.js') !!}"></script>
- <script src="{!! asset('assets/vendor/bootstrap-4.1.1/bootstrap.min.js') !!}"></script>
- <script src="{!! asset('assets/vendor/cookie/jquery.cookie.js') !!}"></script>
- <script src="{!! asset(
-     'assets/vendor/jquery-custom-scrollbar-0.5.5/jquery-custom-scrollbar-0.5.5/jquery.custom-scrollbar.min.js',
- ) !!}"></script>
- <script src="{!! asset('assets/vendor/cicular_progress/circle-progress.min.js') !!}"></script>
- <script src="{!! asset('assets/vendor/sparklines/jquery.sparkline.min.js') !!}"></script>
- <script src="{!! asset('assets/vendor/chartjs/Chart.bundle.min.js') !!}"></script>
- <script src="{!! asset('assets/vendor/chartjs/utils.js') !!}"></script>
- <script src="{!! asset('assets/vendor/jquery-jvectormap/jquery-jvectormap.js') !!}"></script>
- <script src="{!! asset('assets/vendor/jquery-jvectormap/jquery-jvectormap-world-mill-en.js') !!}"></script>
- <script src="{!! asset('assets/vendor/jquery-jvectormap/jquery-jvectormap-asia-mill.js') !!}"></script>
- <script src="{!! asset('assets/vendor/jquery-jvectormap/jquery-jvectormap-africa-mill.js') !!}"></script>
- <script src="{!! asset('assets/vendor/jquery-jvectormap/jquery-jvectormap-us-aea.js') !!}"></script>
- <script src="{!! asset('assets/vendor/jquery-jvectormap/jquery-jvectormap-in-mill.js') !!}"></script>
- <script src="{!! asset('assets/vendor/footable-bootstrap.latest/js/footable.min.js') !!}"></script>
- <script src="{!! asset('assets/vendor/EasyAutocomplete-1.3.5/jquery.easy-autocomplete.min.js') !!}"></script>
- <script src="{!! asset('assets/vendor/datatables/js/jquery.dataTables.min.js') !!}"></script>
- <script src="{!! asset('assets/vendor/datatables/js/dataTables.bootstrap4.js') !!}"></script>
- <script src="{!! asset('assets/vendor/datatables/js/dataTables.responsive.min.js') !!}"></script>
- <script src="{!! asset('assets/vendor/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.min.js') !!}"></script>
- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
- 
- 
- 
+<script src="{!! asset('assets/js/codebase.core.min.js') !!}"></script>
+<script src="{!! asset('assets/js/codebase.app.min.js') !!}"></script>
+
+<!-- Page JS Plugins -->
+<script src="{!! asset('assets/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js') !!}"></script>
+<script src="{!! asset('assets/js/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js') !!}"></script>
+<script src="{!! asset('assets/js/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js') !!}"></script>
+<script src="{!! asset('assets/js/plugins/select2/js/select2.full.min.js') !!}"></script>
+<script src="{!! asset('assets/js/plugins/jquery-tags-input/jquery.tagsinput.min.js') !!}"></script>
+<script src="{!! asset('assets/js/plugins/jquery-auto-complete/jquery.auto-complete.min.js') !!}"></script>
+<script src="{!! asset('assets/js/plugins/masked-inputs/jquery.maskedinput.min.js') !!}"></script>
+<script src="{!! asset('assets/js/plugins/ion-rangeslider/js/ion.rangeSlider.min.js') !!}"></script>
+<script src="{!! asset('assets/js/plugins/dropzonejs/dropzone.min.js') !!}"></script>
+<script src="{!! asset('assets/js/plugins/pwstrength-bootstrap/pwstrength-bootstrap.min.js') !!}"></script>
+<!-- Page JS Plugins -->
+<script src="{!! asset('assets/js/plugins/datatables/jquery.dataTables.min.js') !!}"></script>
+<script src="{!! asset('assets/js/plugins/datatables/dataTables.bootstrap4.min.js') !!}"></script>
+
+<!-- Page JS Code -->
+<script src="{!! asset('assets/js/pages/be_tables_datatables.min.js') !!}"></script>
+
+<!-- Page JS Code -->
+<script src="{!! asset('assets/js/pages/be_forms_plugins.min.js') !!}"></script>
 
 
- <script src="{!! asset('assets/js/main.js') !!}"></script>
+<!-- Page JS Helpers (BS Datepicker + BS Colorpicker + BS Maxlength + Select2 + Masked Input + Range Sliders + Tags Inputs plugins) -->
+<script>jQuery(function(){ Codebase.helpers(['datepicker', 'colorpicker', 'maxlength', 'select2', 'masked-inputs', 'rangeslider', 'tags-inputs']); });</script>
+
+<script>
+  $(function() {
+    $(".datepicker").datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true,
+      todayHighlight: true,
+    });
+  });
+</script>
+

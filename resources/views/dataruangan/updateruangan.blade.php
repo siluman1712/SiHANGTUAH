@@ -1,30 +1,15 @@
 @extends('layouts.main')
 @section('content')
-    <div class="container-fluid mb-3 position-relative bg-purple">
-        <div class="row">
-            <div class="container py-2">
-                <div class="row page-title-row">
-
-                    <div class="col-8 col-md-6">
-                        <h2 class="page-title text-white"> Database Ruangan | Unit</h2>
-                        <p class="text-white">| Update Ruangan dan Unit</p>
-                    </div>
-
-                </div>
-
-            </div>
+<div class="content">
+    <h2 class="content-heading">Database Ruangan</h2>
+    <div class="block">
+        <div class="block-header block-header-default">
+            <h3 class="block-title"><strong>| Update</strong> <small> Ruangan </small></h3>
         </div>
-    </div>
-    <div class="col-sm-12 col-md-12 col-lg-12">
-        <div class="card rounded-0 border-0 mb-3">
-            <div class="card-header">
-                <div class="row">
-                    <div class="col-8">
-                        <h5 class="card-title">Update Data</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card-body ">
+        <div class="block-content">
+            <!-- Hover Table -->
+            <div class="block">
+                <div class="block-content">
                 <form method="post" action="/dataruangan/updateruangan/{{ $dtruangan->koderuangan }}"
                     enctype="multipart/form-data">
                     @csrf
@@ -49,16 +34,20 @@
                     </div>
 
 
-            </div>
-            <div class="card-footer">
-                <button class="mb-2 btn btn-sm btn-dark rounded-0" type="submit">
-                    <i class="fa fa-check"></i>&nbsp;&nbsp;&nbsp;Simpan Perubahan</button>
-                <button class="mb-2 btn btn-sm btn-danger rounded-0" type="reset">
-                    <i class="fa fa-retweet"></i>&nbsp;&nbsp;&nbsp;Reset Data</button>
-                <a href="/kategoriruang" class="mb-2 btn btn-sm btn-success rounded-0"><i
-                        class="fa fa-arrow-left"></i>&nbsp;&nbsp;&nbsp; Kembali Ke Data</a>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-sm btn-primary rounded-0" type="submit">
+                            <i class="fa fa-check"></i>&nbsp;&nbsp;&nbsp;Simpan Perubahan</button>
+                        <button class="btn btn-sm btn-danger rounded-0" type="reset">
+                            <i class="fa fa-retweet"></i>&nbsp;&nbsp;&nbsp;Reset Data</button>
+                        <a href="/kategoriruang" class="btn btn-sm btn-dark rounded-0"><i
+                                class="fa fa-arrow-left"></i>&nbsp;&nbsp;&nbsp; Kembali Ke Data</a>
+                    </div>
+                </div>
+                </form>
+                </div>
             </div>
         </div>
-        </form>
     </div>
+</div>
 @endsection

@@ -1,48 +1,34 @@
 @extends('layouts.main')
 @section('content')
 
-<div class="container-fluid mb-3 position-relative bg-purple">
-    <div class="row">
-        <div class="container py-2">
-            <div class="row page-title-row">
+<div class="content">
+    <h2 class="content-heading">Satuan Kerja</h2>
+    <a href="/dbsatker/tambahsatker" class="mb-2 btn btn-sm btn-danger rounded-0"><i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;Tambah Satuan Kerja</a>    
 
-                <div class="col-8 col-md-6">
-                    <h2 class="page-title text-white"> Satuan Kerja</h2>
-                    <p class="text-white">| Konfigurasi Satuan Kerja</p>
-                </div>
-
-            </div>
-
+    <a href="/" class="mb-2 btn btn-sm btn-dark rounded-0"><i class="fa fa-home"></i>&nbsp;&nbsp; Halaman Utama</a> 
+    <div class="block">
+        <div class="block-header block-header-default">
+             <h3 class="block-title"><strong>| Konfigurasi</strong> <small> Satuan Kerja</small></h3>
         </div>
-    </div>
-</div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="card rounded-0 border-0 mb-3">
-                <div class="card-header">
-                    <div class="row">
-                        <div class="col-8">
-                        <h5 class="card-title">Tabel</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body ">
-                        <table id="table_4" class="table">
+        <div class="block-content">
+            <!-- Hover Table -->
+            <div class="block">
+                <div class="block-content">
+                        <table id="table_1" class="table table-bordered table-striped responsive">
                             <thead>
                                 <tr>
-                                    <th>PB</th>
-                                    <th>PBI</th>
-                                    <th>UKPB</th>
-                                    <th>WILAYAH</th>
-                                    <th>JK</th>
-                                    <th>SATUAN KERJA</th>
-                                    <th>PENGGUNA BARANG</th>
-                                    <th>EDIT</th>
-                                    <th>HAPUS</th>
+                                    <th bgcolor='#002480' class="text-white">PB</th>
+                                    <th bgcolor='#002480' class="text-white">PBI</th>
+                                    <th bgcolor='#002480' class="text-white">UKPB</th>
+                                    <th bgcolor='#002480' class="text-white">WILAYAH</th>
+                                    <th bgcolor='#002480' class="text-white">JK</th>
+                                    <th bgcolor='#002480' class="text-white">SATUAN KERJA</th>
+                                    <th bgcolor='#002480' class="text-white">PENGGUNA BARANG</th>
+                                    <th bgcolor='#002480' class="text-white">EDIT</th>
+                                    <th bgcolor='#002480' class="text-white">HAPUS</th>
                                 </tr>
                             </thead>
-                            @foreach ($dbsatker as $result)
+                            @foreach ($dbsatker as $result) 
                                 <tbody>
                                     <tr>
                                         <td>{{ $result->pebin }}</td>
@@ -63,10 +49,10 @@
                             @endforeach
                         </table>
                 </div>
-                <div class="card-footer">
-                <a href="/dbsatker/tambahsatker" class="mb-2 btn btn-sm btn-danger rounded-0"><i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;Tambah Satuan Kerja</a>
-                </div>
             </div>
+        </div>
+    </div>
+</div>
                 @if ($message = Session::get('sukses'))
                 <div class="alert alert-success alert-block">
                     <button type="button" class="close" data-dismiss="alert">×</button> 
@@ -86,8 +72,5 @@
                     <button type="button" class="close" data-dismiss="alert">×</button> 
                     <strong>{{ $message }}</strong>
                 </div>
-                @endif 
-        </div>
-    </div>
-</div>
+                @endif
 @endsection

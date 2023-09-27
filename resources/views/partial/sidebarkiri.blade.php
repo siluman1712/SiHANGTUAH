@@ -1,76 +1,169 @@
+            <!-- Sidebar -->
+            <nav id="sidebar">
+                <!-- Sidebar Content -->
+                <div class="sidebar-content">
+                    <!-- Side Header -->
+                    <div class="content-header content-header-fullrow px-15">
+                        <!-- Normal Mode -->
+                        <div class="content-header-section text-center align-parent sidebar-mini-hidden">
+                            <!-- Close Sidebar, Visible only on mobile screens -->
+                            <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                            <button type="button" class="btn btn-circle btn-dual-secondary d-lg-none align-v-r" data-toggle="layout" data-action="sidebar_close">
+                                <i class="fa fa-times text-danger"></i>
+                            </button>
+                            <!-- END Close Sidebar -->
 
-		<div class="sidebar left border-right scroll-y">			
-			<ul class="nav flex-column " id="side-menu" style="">
-				<li class="title-nav">MENU REFERENSI</li>
-				<li class="nav-item ">
-					<a href="/" target="_self"><i class="icon fa fa-home"></i> Halaman Utama</a>
-				</li>
+                            <!-- Logo -->
+                            <div class="content-header-item">
+                                <a class="link-effect font-w700" href="/">
+                                    <i class="si si-fire text-primary"></i>
+                                    <span class="font-size-xl text-dual-primary-dark">Si</span> <span class="font-size-xl text-primary">HANGTUAH</span>
+                                </a>
+                            </div>
+                            <!-- END Logo -->
+                        </div>
+                        <!-- END Normal Mode -->
+                    </div>
+                    <!-- END Side Header -->
 
-				<li class="nav-item ">
-					<a href="javascript:void(0)" class="menudropdown nav-link">
-						<i class="icon fa fa-cog"></i> ADMIN
-						<i class="arrow fa fa-angle-down"></i>
-					</a>
-					<ul class="nav flex-column nav-second-level">
-						<li class="nav-item">
-							<a href="grid.html" class="nav-link ">Profil</a>
-						</li>
-						<li class="nav-item">
-							<a href="grid.html" class="nav-link ">User</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="media-object.html">Penandatanganan</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="media-object.html">Database Pegawai</a>
-						</li>
-					</ul>
-				</li>
+                   <!-- Side Navigation -->
+                    <div class="content-side content-side-full">
+                        <ul class="nav-main">
+                        	<li class="nav-main-heading">
+                            <span class="sidebar-mini-hidden">UTAMA</span>
+                        	</li>
+                            <li>
+                                <a class="active" href="/">
+                                <i class="si si-cup"></i>
+                                <span class="sidebar-mini-hide">Halaman Utama</span>
+                            	</a>
+                            </li>
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#">
+                                <i class="si si-user"></i>
+                                <span class="sidebar-mini-hide">Admin</span>
+                            	</a>
+	                                <ul>
+	                                <li><a href="be_pages_error_all.html">Profil User</a></li>
+	                                <li><a href="be_pages_error_all.html">User</a></li>
+	                                <li><a href="be_pages_error_all.html">Penandatanganan</a></li>
+	                                <li><a href="be_pages_error_all.html">Database Pegawai</a></li>
+	                                </ul>
+                            </li>
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#">
+                                <i class="fa fa-gear"></i>
+                                <span class="sidebar-mini-hide">Referensi</span>
+                            	</a>
+	                                <ul>
+	                                <li><a href="/satker">Satuan Kerja</a></li>
+	                                <li><a href="/tampil_konfigtgl">Konfigurasi Tanggal</a></li>
+	                                <li><a href="/listgedung">Bangunan Gedung [list]</a></li>
+	                                <li><a href="/kategoriruang">Kategori Ruangan</a></li>
+	                                <li><a href="/ruangan">Database Ruang</a></li>
+	                                <li><a href="/kodefikasibmn">Database Kodefikasi bmn</a></li>
+	                                </ul>
+                            </li>
 
-				<li class="nav-item ">
-					<a href="javascript:void(0)" class="menudropdown nav-link">
-						<i class="icon fa fa-th"></i> REFERENSI
-						<i class="arrow fa fa-angle-down"></i>
-					</a>
-					<ul class="nav flex-column nav-second-level">
-						<li class="nav-item">
-							<a href="/satker" class="nav-link">Satuan Kerja</a>
-						</li>
-						<li class="nav-item">
-							<a href="/tampil_konfigtgl" class="nav-link">Tanggal Sistem</a>
-						</li>
-						<li class="nav-item">
-							<a href="/listgedung" class="nav-link">List Bangunan Gedung</a>
-						</li>
-						<li class="nav-item">
-							<a href="/kategoriruang" class="nav-link">Kategori Ruangan</a>
-						</li>
-						<li class="nav-item">
-							<a href="/ruangan" class="nav-link">Database Ruangan</a>
-						</li>
-						<li class="nav-item">
-							<a href="/kodefikasibmn" class="nav-link">Daftar Kodefikasi</a>
-						</li>
-					</ul>
-				</li>
-				<li class="title-nav">MENU TRANSAKSI</li>
-				<li class="nav-item ">
-					<a href="javascript:void(0)" class="menudropdown nav-link">
-						<i class="icon fa fa-building-o"></i> RUMAH NEGARA
-						<i class="arrow fa fa-angle-down"></i>
-					</a>
-					<ul class="nav flex-column nav-second-level">
-						<li class="nav-item">
-							<a href="#" class="nav-link">Data Base</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link">Daftar Penghuni</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link">Update Rumah Negara</a>
-						</li>
-					</ul>
-				</li>
-				<li class="title-nav">MENU CETAK</li>
-			</ul>
-		</div>
+                            <li class="nav-main-heading">
+                            <span class="sidebar-mini-hidden">B M N</span>
+                        	</li>
+	                            <li>
+	                                <a class="nav-submenu" data-toggle="nav-submenu" href="#">
+	                                <i class="si si-user"></i>
+	                                <span class="sidebar-mini-hide">Database Aset / BMN</span>
+	                            	</a>
+		                                <ul>
+		                                <li><a href="be_pages_error_all.html">Tanah</a></li>
+		                                <li><a href="be_pages_error_all.html">Gedung dan Bangunan</a></li>
+		                                <li><a href="be_pages_error_all.html">TIK dan Non TIK</a></li>
+		                                <li><a href="be_pages_error_all.html">Alat Angkutan</a></li>
+		                                </ul>
+	                            </li>
+
+	                            <li>
+	                                <a class="nav-submenu" data-toggle="nav-submenu" href="#">
+	                                <i class="si si-user"></i>
+	                                <span class="sidebar-mini-hide">Rumah Negara</span>
+	                            	</a>
+		                                <ul>
+		                                <li><a href="be_pages_error_all.html">Database RN</a></li>
+		                                <li><a href="be_pages_error_all.html">Datar Penghuni RN</a></li>
+		                                <li><a href="be_pages_error_all.html">Update Penghunian RN</a></li>
+		                                </ul>
+	                            </li>
+
+	                            <li>
+	                                <a class="nav-submenu" data-toggle="nav-submenu" href="#">
+	                                <i class="si si-user"></i>
+	                                <span class="sidebar-mini-hide">Transaksi Aset</span>
+	                            	</a>
+		                                <ul>
+		                                <li><a href="be_pages_error_all.html">Usul Transaksi BMN</a></li>
+		                                <li><a href="be_pages_error_all.html">Distribusi Aset ke Unit</a></li>
+		                                <li><a href="be_pages_error_all.html">Ubah Kondisi BMN</a></li>
+		                                <li><a href="be_pages_error_all.html">Set PIC BMN</a></li>
+		                                <li><a href="be_pages_error_all.html">Kelola Penghapusan</a></li>
+		                                <li><a href="be_pages_error_all.html">Kelola Pinjam Pakai</a></li>
+		                                <li><a href="be_pages_error_all.html">Kelola Pemeliharaan</a></li>
+		                                <li><a href="be_pages_error_all.html">Update PSP BMN</a></li>
+		                                <li><a href="be_pages_error_all.html">Kelola DIR / DBR</a></li>
+		                                <li><a href="be_pages_error_all.html">Update DIR / DBR</a></li>
+
+		                                </ul>
+	                            </li>
+
+                        	<li class="nav-main-heading">
+                            <span class="sidebar-mini-hidden">CETAK</span>
+                        	</li>
+
+                            <li>
+                                <a href="#">
+                                <i class="si si-cup"></i>
+                                <span class="sidebar-mini-hide">BAST (Serah Terima)</span>
+                            	</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <i class="si si-cup"></i>
+                                <span class="sidebar-mini-hide">Kartu Ruangan (DIR/DBR)</span>
+                            	</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <i class="si si-cup"></i>
+                                <span class="sidebar-mini-hide">Label Regist. (Barcode)</span>
+                            	</a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                <i class="si si-cup"></i>
+                                <span class="sidebar-mini-hide">Label RB (Barcode)</span>
+                            	</a>
+                            </li>
+
+                        	<li class="nav-main-heading">
+                            <span class="sidebar-mini-hidden">MONITORING</span>
+                        	</li>
+
+	                            <li>
+	                                <a class="nav-submenu" data-toggle="nav-submenu" href="#">
+	                                <i class="si si-user"></i>
+	                                <span class="sidebar-mini-hide">Pencarian</span>
+	                            	</a>
+		                                <ul>
+		                                <li><a href="be_pages_error_all.html">Profil User</a></li>
+		                                <li><a href="be_pages_error_all.html">User</a></li>
+		                                <li><a href="be_pages_error_all.html">Penandatanganan</a></li>
+		                                <li><a href="be_pages_error_all.html">Database Pegawai</a></li>
+		                                </ul>
+	                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- END Side Navigation -->
+                </div>
+                <!-- Sidebar Content -->
+            </nav>
+            <!-- END Sidebar -->

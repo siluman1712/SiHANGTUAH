@@ -1,37 +1,22 @@
 @extends('layouts.main')
 @section('content')
-    <div class="container-fluid mb-3 position-relative bg-purple">
-        <div class="row">
-            <div class="container py-2">
-                <div class="row page-title-row">
-
-                    <div class="col-8 col-md-6">
-                        <h2 class="page-title text-white"> Tanggal dan Tahun Anggaran</h2>
-                        <p class="text-white">| Konfigurasi Tanggal Transaksi dan Tahun Anggaran</p>
-                    </div>
-
-                </div>
-
-            </div>
+<div class="content">
+    <h2 class="content-heading">Tanggal dan Tahun Anggaran</h2>
+    <div class="block">
+        <div class="block-header block-header-default">
+            <h3 class="block-title"><strong>| Konfigurasi</strong> <small> Tanggal dan TA </small></h3>
         </div>
-    </div>
-    <div class="col-sm-12 col-md-12 col-lg-12">
-        <div class="card rounded-0 border-0 mb-3">
-            <div class="card-header">
-                <div class="row">
-                    <div class="col-8">
-                        <h5 class="card-title">Tabel</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card-body ">
-                <table id="table_4" class="table">
+        <div class="block-content">
+            <!-- Hover Table -->
+            <div class="block">
+                <div class="block-content">
+                <table id="table_1" class="table table-bordered table-striped responsive">
                     <thead>
                         <tr>
-                            <th bgcolor="#dcdcdc">TAHUN ANGGARAN</th>
-                            <th bgcolor="#dcdcdc">TANGGAL AWAL</th>
-                            <th bgcolor="#dcdcdc">TANGGAL AKHIR</th>
-                            <th bgcolor="#dcdcdc" width="50">AKSI</th>
+                            <th bgcolor='#002480' class="text-white">TAHUN ANGGARAN</th>
+                            <th bgcolor='#002480' class="text-white">TANGGAL AWAL</th>
+                            <th bgcolor='#002480' class="text-white">TANGGAL AKHIR</th>
+                            <th bgcolor='#002480' class="text-white" width="50">AKSI</th>
                         </tr>
                     </thead>
                     @foreach ($data as $result)
@@ -49,8 +34,13 @@
                         </tbody>
                     @endforeach
                 </table>
+                </div>
             </div>
         </div>
+    </div>
+</div>
+
+
         @if ($message = Session::get('sukses'))
             <div class="alert alert-success alert-block">
                 <button type="button" class="close" data-dismiss="alert">×</button>
@@ -71,5 +61,5 @@
                 <strong>{{ $message }}</strong>
             </div>
         @endif
-    </div>
+
 @endsection

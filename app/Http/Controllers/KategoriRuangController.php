@@ -16,7 +16,7 @@ class KategoriRuangController extends Controller
     public function tambahkategori()
     {
         $kategori = KategoriRuangan::all();
-        return view('dataruangan.tambahkategori', compact('kategori'));
+        return view('dataruangan.tambahkategori', compact('kategori')); 
     }
 
     public function insertdata(Request $request)

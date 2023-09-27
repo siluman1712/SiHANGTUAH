@@ -1,20 +1,45 @@
 @extends('layouts.main')
 @section('content')
 
-<div class="container-fluid mb-3 position-relative bg-purple">
-    <div class="row">
-        <div class="container py-2">
-            <div class="row page-title-row">
+<div class="content">
+    <h2 class="content-heading">Tanggal dan Tahun Anggaran</h2>
+    <div class="block">
+        <div class="block-header block-header-default">
+            <h3 class="block-title"><strong>| Update</strong> <small> Tanggal dan TA </small></h3>
+        </div>
+        <div class="block-content">
+            <!-- Hover Table -->
+            <div class="block">
+                <div class="block-content">
+                    <form method="post" action="/konfigtanggal/updatetgl/{{$data->id}}" enctype="multipart/form-data">
+                        @csrf
+                        <div class="form-group row">
 
-                <div class="col-8 col-md-6">
-                    <h2 class="page-title text-white"> Tanggal dan Tahun Anggaran</h2>
-                    <p class="text-white">| Konfigurasi Tanggal Transaksi dan Tahun Anggaran</p>
+                            <div class="col-sm-2">
+                                <input class="js-datepicker form-control" id="example-datepicker1" type="text" name="tglAwal" value="{{ $data->tglAwal }}" data-today-highlight="true" data-date-format="yyyy-mm-dd">
+                                <small>Tanggal Awal</small>
+                            </div>
+
+                            <div class="col-sm-2">
+                                <input class="js-datepicker form-control" id="example-datepicker2" type="text" name="tglAkhir" value="{{ $data->tglAkhir }}" data-today-highlight="true" data-date-format="yyyy-mm-dd">
+                                <small>Tanggal Akhir</small>
+                            </div>
+
+                            <div class="col-sm-1">
+                                <input class="form-control" maxlength="4" type="text" name="tahun_anggaran" value="{{ $data->tahun_anggaran }}">
+                                <small>T A</small>
+                            </div>
+                        <button class="btn btn-ms btn-primary" type="submit">
+                        <i class="fa fa-check"></i>
+                        &nbsp;&nbsp;&nbsp;Simpan Perubahan
+                        </button>
+                    </div>
+                    </form>
                 </div>
-
             </div>
-
         </div>
     </div>
+    # T A : Tahun Anggaran
 </div>
 
 
@@ -38,42 +63,4 @@
                 <strong>{{ $message }}</strong>
             </div>
         @endif
-
-        <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="card rounded-0 border-0 mb-3">
-                <div class="card-header">
-                    <div class="row">
-                        <div class="col-8">
-                        <h5 class="card-title">Update Perubahan</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body ">
-                    <form method="post" action="/konfigtanggal/updatetgl/{{$data->id}}" enctype="multipart/form-data">
-                        @csrf
-                        <div class="form-group row">
-
-                            <div class="col-sm-2">
-                                <input class="form-control" id="tanggal" type="text" name="tglAwal" value="{{ $data->tglAwal }}">
-                                <small>Tanggal Awal</small>
-                            </div>
-
-                            <div class="col-sm-2">
-                                <input class="form-control" id="tanggals" type="text" name="tglAkhir" value="{{ $data->tglAkhir }}">
-                                <small>Tanggal Akhir</small>
-                            </div>
-
-                            <div class="col-sm-1">
-                                <input class="form-control" maxlength="4" type="text" name="tahun_anggaran" value="{{ $data->tahun_anggaran }}">
-                                <small>T A</small>
-                            </div>
-                        </div>
-                        <button class="mb-2 btn btn-sm btn-primary rounded-0" type="submit"><i
-                        class="fa fa-check"></i>&nbsp;&nbsp;&nbsp;Simpan Perubahan</button>
-
-                    </form>
-                </div>
-            </div>
-            # T A : Tahun Anggaran
-        </div>
 @endsection
